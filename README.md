@@ -51,35 +51,35 @@ Before you begin, ensure you have met the following requirements:
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
-    ```bash
+```bash
     git clone https://github.com/ananinja/customer-app.git
     cd customer-app
-    ```
+ ```
 
 2. Install JavaScript dependencies:
-    ```bash
+```bash
     yarn install
-    ```
+```
 
 3. For iOS, install the necessary pods:
-    ```bash
+```bash
     cd ios && pod install
-    ```
+```
 
 4. Start the Metro Bundler:
-    ```bash
+```bash
     yarn start
-    ```
+```
 
 5. Run the app:
     - For iOS:
-      ```bash
+```bash
       yarn ios
-      ```
+```
     - For Android:
-      ```bash
+```bash
       yarn android
-      ```
+```
 
 ## Development
 
