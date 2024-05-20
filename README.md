@@ -1,30 +1,6 @@
 ```markdown
 # Ninja Customer Mobile App
 
-## Table of Contents
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Development](#development)
-- [Release Production Build](#release-production-build)
-- [Release Production Assets](#release-production-assets)
-- [Add a New npm Package with Native Code](#add-a-new-npm-package-with-native-code)
-- [Add a New Device to Development](#add-a-new-device-to-development)
-- [Patch Details](#patch-details)
-- [Refactor Roadmap](#refactor-roadmap)
-  - [Separate the UI from the Logic](#separate-the-ui-from-the-logic)
-  - [Move All API Calls and Formatting to Services](#move-all-api-calls-and-formatting-to-services)
-  - [Gradually Remove All Legacy Code](#gradually-remove-all-legacy-code)
-- [Fastlane](#fastlane)
-- [Setup](#setup)
-- [How to Run on Production](#how-to-run-on-production)
-- [CodePush](#codepush)
-- [Language Support](#language-support)
-- [Theme Pattern](#theme-pattern)
-  - [Sizes](#sizes)
-  - [Colors](#colors)
-  - [TextStyle](#textstyle)
-
 ## Getting Started
 
 ### Prerequisites
@@ -42,6 +18,7 @@ Before you begin, ensure you have met the following requirements:
 ```bash
     sudo gem install cocoapods
 ```
+
 - For Android development:
   - You have installed [Android Studio](https://developer.android.com/studio).
   - You have set up your Android development environment by following the [React Native documentation](https://reactnative.dev/docs/environment-setup).
