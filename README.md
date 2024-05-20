@@ -1,6 +1,7 @@
 ```markdown
 # Ninja Customer Mobile App
 
+
 ## Getting Started
 
 ### Prerequisites
@@ -15,6 +16,7 @@ Before you begin, ensure you have met the following requirements:
   - You have a Mac with the latest version of macOS.
   - You have Xcode installed from the Mac App Store.
   - You have installed [CocoaPods](https://cocoapods.org/):
+
 ```bash
     sudo gem install cocoapods
 ```
