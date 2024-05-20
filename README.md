@@ -39,9 +39,9 @@ Before you begin, ensure you have met the following requirements:
   - You have a Mac with the latest version of macOS.
   - You have Xcode installed from the Mac App Store.
   - You have installed [CocoaPods](https://cocoapods.org/):
-    ```bash
+```bash
     sudo gem install cocoapods
-    ```
+```
 - For Android development:
   - You have installed [Android Studio](https://developer.android.com/studio).
   - You have set up your Android development environment by following the [React Native documentation](https://reactnative.dev/docs/environment-setup).
@@ -366,3 +366,4 @@ const styles = StyleSheet.create({
 ### TextStyle
 
 We define text styles and font related properties in a dedicated file `theme.ts`
+```
