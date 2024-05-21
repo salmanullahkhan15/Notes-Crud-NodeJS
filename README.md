@@ -1,6 +1,5 @@
-```markdown
 # Ninja Customer Mobile App
-```
+
 ## Table of Contents
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -16,7 +15,6 @@
   - [Move All API Calls and Formatting to Services](#move-all-api-calls-and-formatting-to-services)
   - [Gradually Remove All Legacy Code](#gradually-remove-all-legacy-code)
 - [Fastlane](#fastlane)
-- [Setup](#setup)
 - [How to Run on Production](#how-to-run-on-production)
 - [CodePush](#codepush)
 - [Language Support](#language-support)
