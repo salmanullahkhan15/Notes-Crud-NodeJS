@@ -1,7 +1,6 @@
 ```markdown
-```
 # Ninja Customer Mobile App
-
+```
 ## Table of Contents
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -40,7 +39,6 @@ Before you begin, ensure you have met the following requirements:
   - You have a Mac with the latest version of macOS.
   - You have Xcode installed from the Mac App Store.
   - You have installed [CocoaPods](https://cocoapods.org/):
-    
 ```bash
     sudo gem install cocoapods
 ```
@@ -169,26 +167,6 @@ For detailed information on patches, please refer to the patch page.
 ## Fastlane
 
 Fastlane is used to automate the build and release process for both development and production environments. Ensure you have Fastlane installed and configured correctly before running the commands.
-
-## Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/ananinja/customer-app.git
-cd customer-app
-```
-
-Install dependencies:
-
-```bash
-yarn install
-cd ios && pod install
-```
-
-Configure environment variables:
-
-Create a `.env` file in the root directory and add necessary configuration variables.
 
 ## How to Run on Production
 
