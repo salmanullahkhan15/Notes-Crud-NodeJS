@@ -345,4 +345,3 @@ const styles = StyleSheet.create({
 ### TextStyle
 
 We define text styles and font related properties in a dedicated file `theme.ts`
-```
