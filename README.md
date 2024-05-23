@@ -194,7 +194,7 @@ CodePush allows for the deployment of app updates directly to users' devices. En
  
 We need to make sure that with staging we need to send staging CodePush and with production we need to send production CodePush.
  
-## How Staging and Production CodePush Triggers
+### How Staging and Production CodePush Triggers
 - Merging with the staging branch triggers staging CodePush.
 - Merging with the main branch triggers production CodePush.
 - We can upload CodePush manually with any branch and any production or staging environment.
