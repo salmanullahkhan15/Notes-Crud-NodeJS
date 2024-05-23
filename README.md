@@ -1,6 +1,6 @@
-**Ninja Customer Mobile App**
+# Ninja Customer Mobile App
 
-**Table of Contents**
+## Table of Contents
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -25,9 +25,9 @@
   - [TextStyle](#textstyle)
   - [Icons](#icons)
  
-**Getting Started**
+## Getting Started
  
-**Prerequisites**
+### Prerequisites
  
 Before you begin, ensure you have met the following requirements:
  
@@ -47,7 +47,7 @@ For Android development:
 - You have installed Android Studio.
 - You have set up your Android development environment by following the React Native documentation.
  
-**Installation**
+### Installation
  
 To set up the project locally, follow these steps:
  
@@ -84,7 +84,7 @@ For Android:
 yarn android
 ```
  
-**Development**
+## Development
  
 To set up the development environment and run the app locally, follow these steps:
  
@@ -103,14 +103,14 @@ Run the app on an iOS simulator:
 yarn ios
 ```
  
-**Running Production On Staging Build**
+## Running Production On Staging Build 
  
 To run the production environment on staging build, uncomment line 16 in `AppInfo.ts` like this:
 ```ts
 return appEnv;
 ```
  
-**Staging Build**
+## Staging Build
  
 To build a staging version of the app, use the following commands:
  
@@ -124,7 +124,7 @@ Use Fastlane to build the production version:
 fastlane development
 ```
  
-**Release Production Build**
+## Release Production Build
  
 To build and release a production version of the app, use the following commands:
  
@@ -138,7 +138,7 @@ Use Fastlane to build the production version:
 fastlane production
 ```
  
-**Add a New npm Package with Native Code**
+## Add a New npm Package with Native Code
  
 To add a new npm package that includes native code, follow these steps:
  
@@ -154,58 +154,58 @@ cd ios && bundle exec pod install
  
 After adding the package, bump the minor version of `CFBundleShortVersionString` in `Info.plist`. For example, update the version from 1.56.678 to 1.57.678.
  
-**Add a New Device to Development**
+## Add a New Device to Development
  
 To register a new device for development, use the following Fastlane command:
 ```sh
 fastlane run register_device udid:"20b0db064139fb61843d1e58c4b9a41ab6698621" name:"My iPhone"
 ```
  
-**Patch Details**
+## Patch Details**
  
 For detailed information on patches, please refer to the patch page.
  
-**Refactor Roadmap**
+## Refactor Roadmap
  
-**Separate the UI from the Logic:**
+## Separate the UI from the Logic:
 - Extract UI components to their own files, separating them from logic and styles.
 - Minimize file length by creating custom hooks, styles, and dedicated logic files.
  
-**Move All API Calls and Formatting to Services:**
+## Move All API Calls and Formatting to Services:
 - Create dedicated services like CatalogService, OrdersService, and PaymentService to handle API calls, data formatting, and caching.
  
-**How We Call APIs**
+## How We Call APIs
 - All API calls are handled through a centralized file located at `src/Services/ApiClient/index.ts`. This file provides a single point of entry for all network requests, ensuring a consistent approach to error handling, request formatting, and response processing.
  
-**Gradually Remove All Legacy Code:**
+## Gradually Remove All Legacy Code:
 - Identify and refactor or remove outdated code to improve maintainability and performance.
  
-**Fastlane**
+## Fastlane
  
 Fastlane is used to automate the build and release process for both development and production environments. Ensure you have Fastlane installed and configured correctly before running the commands.
  
-**How to Run on Production**
+## How to Run on Production
  
 To run the app in a production environment, build the production version and deploy the assets using the previously mentioned commands under "Release Production Build" and "Release Production Assets."
  
-**CodePush**
+## CodePush
  
 CodePush allows for the deployment of app updates directly to users' devices. Ensure you have set up CodePush correctly by following the instructions in the official CodePush documentation.
  
 We need to make sure that with staging we need to send staging CodePush and with production we need to send production CodePush.
  
-**How Staging and Production CodePush Triggers**
+## How Staging and Production CodePush Triggers
 - Merging with the staging branch triggers staging CodePush.
 - Merging with the main branch triggers production CodePush.
 - We can upload CodePush manually with any branch and any production or staging environment.
  
-**Language Support**
+## Language Support
  
 This app supports two locales: English and Arabic. We use the `i18n-js` module for localization. Developers only need to add strings to the `en.json` file. GitHub Actions will push these changes to Localazy, and the marketing team will manage the `ar.json` file.
  
-**Theme Pattern**
+## Theme Pattern
  
-**Sizes**
+### Sizes
  
 The `Sizes.ts` file defines padding and margin sizes for various elements. It is structured to provide a consistent spacing system throughout the app.
 ```ts
@@ -284,7 +284,7 @@ export const Sizes = StyleSheet.create({
 });
 ```
  
-**Usage**
+### Usage
  
 Import the `Sizes` object and use it in your component styles:
 ```ts
@@ -299,11 +299,11 @@ const styles = StyleSheet.create({
 });
 ```
  
-**Colors**
+### Colors 
  
 The `Colors.ts` file defines a comprehensive palette of colors for the application. The colors are grouped by themes and usage contexts to maintain a cohesive design.
  
-**Base Colors**
+### Base Colors
  
 These are fundamental colors used across different themes.
 ```ts
@@ -321,7 +321,7 @@ gray, etc.)
 };
 ```
  
-**Extended Colors**
+### Extended Colors
  
 These colors are derived from the base colors and are categorized by usage context.
 ```ts
@@ -346,7 +346,7 @@ export const COLORS = {
 };
 ```
  
-**Usage**
+### Usage 
  
 Import the `COLORS` object and use it in your component styles:
 ```ts
@@ -363,23 +363,23 @@ const styles = StyleSheet.create({
 });
 ```
  
-**TextStyle**
+### TextStyle
  
 We define text styles and font-related properties in a dedicated file `theme.ts`. We have a separate component for Text named `TextV2` for consistency in the design of our text. Make sure to use the same component throughout the app.
  
-**Usage**
+### Usage 
 ```ts
 <TextV2></TextV2>
 ```
  
-**Icons**
+### Icons
  
 Similar to Text, we use the `IconV2` component for consistency in the Icons. To use the icons, add icons to the `src/Assets` folder and run the following:
 ```sh
 yarn icon:svg
 ```
  
-**Usage**
+## Usage
 ```ts
 <IconV2
   name="Plus"
