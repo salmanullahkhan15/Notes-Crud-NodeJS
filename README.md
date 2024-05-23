@@ -284,7 +284,7 @@ export const Sizes = StyleSheet.create({
 });
 ```
  
-### Usage
+#### Usage
  
 Import the `Sizes` object and use it in your component styles:
 ```ts
@@ -303,7 +303,7 @@ const styles = StyleSheet.create({
  
 The `Colors.ts` file defines a comprehensive palette of colors for the application. The colors are grouped by themes and usage contexts to maintain a cohesive design.
  
-### Base Colors
+#### Base Colors
  
 These are fundamental colors used across different themes.
 ```ts
@@ -321,7 +321,7 @@ gray, etc.)
 };
 ```
  
-### Extended Colors
+#### Extended Colors
  
 These colors are derived from the base colors and are categorized by usage context.
 ```ts
@@ -346,7 +346,7 @@ export const COLORS = {
 };
 ```
  
-### Usage 
+#### Usage 
  
 Import the `COLORS` object and use it in your component styles:
 ```ts
@@ -367,7 +367,7 @@ const styles = StyleSheet.create({
  
 We define text styles and font-related properties in a dedicated file `theme.ts`. We have a separate component for Text named `TextV2` for consistency in the design of our text. Make sure to use the same component throughout the app.
  
-### Usage 
+#### Usage 
 ```ts
 <TextV2></TextV2>
 ```
@@ -379,7 +379,7 @@ Similar to Text, we use the `IconV2` component for consistency in the Icons. To 
 yarn icon:svg
 ```
  
-## Usage
+#### Usage
 ```ts
 <IconV2
   name="Plus"
